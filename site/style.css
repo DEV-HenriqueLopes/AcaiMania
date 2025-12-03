@@ -86,9 +86,13 @@
 }
 
 .card-acai {
-    width: 40%;
+    width: 35%;
     margin: auto;
-    height: 50%;
+    height: 500px;
+}
+
+#seta-prev {
+    margin-left: -50px;
 }
 
 .pergunta {
