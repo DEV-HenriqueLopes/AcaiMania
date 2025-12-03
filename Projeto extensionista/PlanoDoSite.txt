@@ -1,0 +1,19 @@
+Objetivo=Captar novos clientes
+         Divulgar a açaiteria
+         Demonstrar qualidade de ingredientes
+         Demonstrar capacidade dos funcionarios
+         Demonstrar a estrutura da açaiteria
+         Retirar Dúvidas frequentes
+
+Carrocel de imagens= primeira pagina:Amostra do cardapio
+                     segunda pagina:Qualidade dos ingredientes
+                     terceira pagina:Novidades
+                     
+
+<div class="container-fluid">
+    <div class="row h-700px bg-gray pb-5"> 
+        <div class="col-md-3 mt-5" style="font-size: 3.5em;">O melhor açai de Fronteira te espera!</div>
+        <div class="col-md-6 galeria d-flex justify-content-center h-md-720px w-md-480px" style="background-image: url(../imagens/ChatGPT\ Image\ 27\ de\ nov.\ de\ 2025\,\ 12_10_35.png); margin-top: 4.5em;"></div>
+        <div class="col"></div>
+    </div>
+</div>     
