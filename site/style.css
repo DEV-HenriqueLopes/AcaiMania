@@ -85,9 +85,13 @@
     margin-top: 0px;
 }
 
+.carouselLarge {
+    pointer-events: none;
+}
+
 .card-acai {
     width: 43%;
-    margin: auto;
+    margin: 0 2%;
     height: 385px;
     margin-top: 5%;
 }
@@ -96,18 +100,28 @@
     width: 60%;
 }
 
+.card-title {
+    font-size: clamp(1em, 3vw, 1.5em);
+    font-weight: 600;
+}
+
 .cont-card {
     padding: 5px 0px;
     margin: 0px;
     font-size: clamp(0.85em, 2.5vw, 1.0em);
 }
 
+.card-hover:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.020);
+}
+
 #seta-prev {
-    margin-left: -60px;
+    margin-left: -5%;
 }
 
 #seta-next {
-    margin-right: -60px;
+    margin-right: -5%;
 }
 
 .pergunta {
@@ -298,7 +312,17 @@
         margin-top: 50px;
     }
 
+    .carouselLarge {
+        pointer-events: auto;
+    }
+
+    .carouselsmall {
+        pointer-events: none;
+    }
+
     .card-acai {
         width: 20%;
+        height: 550px;
+        margin-top: 0;
     }
 }
