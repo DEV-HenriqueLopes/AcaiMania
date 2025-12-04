@@ -86,13 +86,28 @@
 }
 
 .card-acai {
-    width: 35%;
+    width: 43%;
     margin: auto;
-    height: 500px;
+    height: 385px;
+    margin-top: 5%;
+}
+
+.card-acai img{
+    width: 60%;
+}
+
+.cont-card {
+    padding: 5px 0px;
+    margin: 0px;
+    font-size: clamp(0.85em, 2.5vw, 1.0em);
 }
 
 #seta-prev {
-    margin-left: -50px;
+    margin-left: -60px;
+}
+
+#seta-next {
+    margin-right: -60px;
 }
 
 .pergunta {
