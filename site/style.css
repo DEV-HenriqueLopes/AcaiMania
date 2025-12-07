@@ -129,11 +129,6 @@ body {
     margin-bottom: 550px;
 }
 
-.cardapio {
-    max-height: 1000px;
-    overflow: hidden;
-}
-
 .pergunta {
     font-size: 1.4rem;
     border-top: 1px solid black;
@@ -342,15 +337,10 @@ body {
         pointer-events: none;
     }
 
-    .cardapio {
-        max-height: 1200px;
-        overflow: hidden;
-    }
-
     .badge-personalizado {
         font-size: clamp(0.85em, 3vw, 1em);
         margin-bottom: 0px;
-        width: 75%;
+        width: 69%;
     }
 
     .card-acai {
@@ -369,6 +359,6 @@ body {
     }
 
     .cadastro {
-        width: 35%;
+        width: 25%;
     }
 }
