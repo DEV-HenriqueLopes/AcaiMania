@@ -8,52 +8,93 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="max-width: 1440px; margin: auto;">
+<body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-purple fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-custom bg-purple navbar-dark fixed-top d-lg-flex d-none">
         <div class="container-fluid">
-            <div class="col-1"></div>
-
-            <a class="navbar-brand col-1 d-flex align-items-center justify-content-center" href="index.html">
-                <img src="../imagens/ChatGPT Image 26 de nov. de 2025, 09_07_41.png" alt="Logo Açai mania" id="logo">
+            <a class="navbar-brand" href="index.html">
+                <img src="../imagens/ChatGPT Image 26 de nov. de 2025, 09_07_41.png" alt="Logo" class="mt-5"> 
             </a>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cardápio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#populares">Populares</a></li>
+                            <li><a class="dropdown-item" href="#combinadinhos">Combinadinhos</a></li>
+                            <li><a class="dropdown-item" href="#">Barcas</a></li>
+                            <li><a class="dropdown-item" href="#">Marmitas</a></li>
+                            <li><a class="dropdown-item" href="#">Copos Puros</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true"><img src="../imagens/logo_whatsapp.webp" alt="logo" style="margin: -5px -2px 0 0">WhatsApp</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar bg-purple fixed-top d-lg-none d-flex navbar-custom navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="../imagens/ChatGPT Image 26 de nov. de 2025, 09_07_41.png" alt="logo" style="width: 80%;" class="mt-2">
+            </a>
+            <button class="navbar-toggler mb-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse row h-md-75px" id="navbarNav" >
-                <div class="col-6 d-flex flex-column h-100">
-                    <div class="row h-md-50 h-15"></div>
-                    <div class="row h-md-50 h-85">
-                        <div class="col-6 text-center h5 menu-personalizado">
-                            <a href="index.html" rel="prev" target="_self" class="text-white nav-link mt-mb-0 mt-5" style="text-decoration: none;">Início</a>
-                        </div>
-                        <div class="col-6 text-center h5 menu-personalizado">
-                            <a href="#" class="text-white nav-link mt-mb-0 mt-5" style="text-decoration: none;">Historia</a>
-                        </div>
-                    </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-
-                <div class="col-6 d-flex flex-column h-100">
-                    <div class="row h-md-50 h-15"></div>
-                    <div class="row h-md-50 h-85">
-                        <div class="col-6 text-center text-white h5 menu-personalizado">
-                            <a href="#" target="_self" rel="next" class="text-white nav-link mt-mb-0 mt-5" style="text-decoration: none;">Cardapio</a>
-                        </div>
-                        <div class="col-6 text-center text-white h5 menu-whatsapp">
-                            <a href="#" target="_blank" rel="external" class="text-white nav-link mt-mb-0 mt-5" style="text-decoration: none;">
-                                Whatsapp
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cardápio
                             </a>
-                        </div>
-                    </div>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="#populares">Populares</a></li>
+                                <li><a class="dropdown-item" href="#combinadinhos">Combinadinhos</a></li>
+                                <li><a class="dropdown-item" href="#">Barcas</a></li>
+                                <li><a class="dropdown-item" href="#">Marmitas</a></li>
+                                <li><a class="dropdown-item" href="#">Copos Puros</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-disabled="true">WhatsApp<img src="../imagens/logo_whatsapp.webp" alt="logo" style="margin: -5px -2px 0 0"></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-        <div class="carousel-inner">
+    <div id="carouselExampleSlidesOnly" class="carousel slide mx-auto bg-gray" data-bs-ride="carousel" data-bs-interval="3000" >
+        <div class="carousel-inner" style="max-width: 1440px; margin: auto;">
             <div class="carousel-item active bg-gray h-700px w-100 pb-6">
                 <div class="row h-100"> 
                     <div class="col-12 col-md-3 d-flex">
@@ -109,7 +150,7 @@
     <div class="container-fluid mx-auto mt-6">
         <div class="row mb-4">
                 <h1 class="text-center font-comemorativa">Cardapio</h1>
-                <p class="badge bg-dark mx-auto mt-5 badge-personalizado">Populares</p>
+                <p class="badge bg-dark mx-auto mt-5 badge-personalizado" id="populares">Populares</p>
         </div>
         <div id="carouselLarge" class="carousel slide carousel-dark d-none d-md-block mb-4" data-bs-interval="false" data-bs-wrap="false">
             <div class="carousel-inner">
@@ -361,9 +402,9 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="max-height: 1200px; overflow: hidden;">
+    <div class="container-fluid cardapio">
         <div class="row">
-            <p class="badge bg-dark mx-auto mt-5 badge-personalizado">Combinadinhos</p>
+            <p class="badge bg-dark mx-auto mt-5 badge-personalizado" id="combinadinhos">Combinadinhos</p>
         </div>
         <div class="row d-flex justify-content-center mt-3">
             <div class="card card-acai">

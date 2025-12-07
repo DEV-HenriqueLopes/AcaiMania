@@ -8,22 +8,18 @@
     font-style: normal;
 }
 
-#logo {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
     padding: 0;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    margin-top: 30px;
+    margin: 0;
+    overflow-x: hidden;
 }
 
-.menu-personalizado:hover {
-    padding-bottom: 17px;
-    border-bottom: 4px solid #F2C438;
-}
-
-.menu-whatsapp:hover {
-    padding-bottom: 11px;
-    border-bottom: 4px solid #25D366;
+.navbar-custom{
+    height: 85px;
 }
 
 .galeria {
@@ -91,15 +87,15 @@
 
 .badge-personalizado {
     font-size: clamp(0.85em, 3vw, 1em);
-    margin-bottom: -25px;
-    width: 30%;
+    margin-bottom: -35px;
+    width: 40%;
 }
 
 .card-acai {
-    width: 43%;
-    max-width: 200px;
+    width: 40%;
+    max-width: 241px;
     margin: 0 1%;
-    height: 430px;
+    max-height: 510px;
     margin-top: 5%;
 }
 
@@ -125,12 +121,17 @@
 
 #seta-prev {
     margin-left: 15px;
-    margin-top: -465px;
+    margin-bottom: 550px;
 }
 
 #seta-next {
     margin-right: 15px;
-    margin-top: -465px;
+    margin-bottom: 550px;
+}
+
+.cardapio {
+    max-height: 1000px;
+    overflow: hidden;
 }
 
 .pergunta {
@@ -160,6 +161,10 @@
 .pergunta:hover .resposta{
     opacity: 1;
     transform: translateY(0);
+}
+
+.cadastro {
+    width: 75%;
 }
 
 /* classes personalizadas bootstrap */
@@ -217,22 +222,9 @@
 }
 
 @media screen and (min-width: 576px) {
-    .card-acai {
-        height: 480px;
-    }
 
     .badge-personalizado {
         width: 50%;
-    }
-
-    #seta-prev {
-        margin-left: 15px;
-        margin-top: -560px;
-    }
-
-    #seta-next {
-        margin-right: 15px;
-        margin-top: -560px;
     }
 }
 
@@ -350,6 +342,11 @@
         pointer-events: none;
     }
 
+    .cardapio {
+        max-height: 1200px;
+        overflow: hidden;
+    }
+
     .badge-personalizado {
         font-size: clamp(0.85em, 3vw, 1em);
         margin-bottom: 0px;
@@ -358,18 +355,20 @@
 
     .card-acai {
         width: 20%;
-        max-width: 220px;
-        height: 500px;
+        max-width: 300px;
+        max-height: 700px;
         margin-top: 0;
     }
 
     #seta-prev {
-        margin-left: -6%;
-        margin-top: 0;
+        margin: 0 0 0 -6%;
     }
 
     #seta-next {
-        margin-right: -6%;
-        margin-top: 0;
+        margin: 0 -6% 0 0;
+    }
+
+    .cadastro {
+        width: 35%;
     }
 }
