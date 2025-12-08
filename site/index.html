@@ -33,7 +33,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link" href="login.php">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-disabled="true"><img src="../imagens/logo_whatsapp.webp" alt="logo" style="margin: -5px -2px 0 0">WhatsApp</a>
@@ -57,7 +57,7 @@
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -78,7 +78,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-dark" aria-current="page" href="login.html">Login</a>
+                            <a class="nav-link active text-dark" aria-current="page" href="login.php">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" aria-disabled="true">WhatsApp<img src="../imagens/logo_whatsapp.webp" alt="logo" style="margin: -5px -2px 0 0"></a>
@@ -94,60 +94,30 @@
     </nav>
 
     <div id="carouselExampleSlidesOnly" class="carousel slide mx-auto bg-gray" data-bs-ride="carousel" data-bs-interval="3000" >
-        <div class="carousel-inner" style="max-width: 1440px; margin: auto;">
-            <div class="carousel-item active bg-gray h-700px w-100 pb-6">
-                <div class="row h-100"> 
-                    <div class="col-12 col-md-3 d-flex">
-                        <h1 class="font-comemorativa text-white h1-pg-1 ms-3">O MELHOR <br>AÇAI!</h1>
-                    </div>
-                    <div class="col-6 col-md-3 d-flex justify-content-center">
-                        <img src="../imagens/ChatGPT Image 27 de nov. de 2025, 12_10_35.png" alt="Açai" class="galeria h-md-720px w-md-480px mt-0 mt-md-5 h-360px w-240px">
-                    </div>
-                    <div class="col-6 col-md-6 pe-4">
-                        <p class="h4 text-white ms-md-5 ms-2 p1-pg-1">Cremoso, natural e com acompanhamentos <br>que você só encontra aqui.</p>
-                        <p class="text-white ms-md-5 ms-2 mt-4">Sua dose diária de felicidade em uma tigela. São dezenas de combinações esperando por você</p>
-                        <p class="text-white ms-md-5 ms-2 p3-pg-1">Clique e descubra por que somos os melhores!</p>
-                        <a href="#" class="btn bg-yellow ms-5" style="margin-top: -5px">Ver Cardápio</a>
-                    </div>
-                </div>   
+        <div class="carousel-inner" style="max-width: 1440px; margin: 80px auto 0 auto;">
+            <div class="carousel-item active bg-gray h-75 w-100 pb-4">
+                <img class="d-block w-100" src="../imagens/slide1.png" alt="First slide"> 
             </div>
-            <div class="carousel-item bg-gray h-700px w-100 pb-6">
-                <div class="row h-100"> 
-                    <div class="col-12 col-md-3">
-                        <h1 class="font-comemorativa text-white h1-pg-2 ms-3">MONTE<br> SEU AÇAI!</h1>
-                        <p class="text-white ms-3" style="font-size: 1.2em;">Escolha uma opção de tamanho e se delicie com um açai do seu jeito.</p>
-                    </div>
-                    <div class="col-6 col-md-3 d-flex justify-content-center">
-                        <img src="../imagens/ChatGPT Image 28 de nov. de 2025, 08_48_09.png" alt="Açai" class="galeria h-md-720px w-md-480px mt-0 mt-md-5 h-360px w-240px mt-0 mt-md-4">
-                    </div>
-                    <div class="col-6 pe-5">
-                        <p class="text-white ms-0 ms-md-5 p2-pg-2">Escolha entre nossos mais de 30 acompanhamentos e crie o açaí dos seus sonhos. Do básico ao exótico, a combinação é sua! Comece a montar a sua obra-prima gelada agora mesmo!</p>
-                        <a href="#" class="btn bg-yellow ms-5 btn1-pg-2">Ver Toppings</a>
-                    </div>
-                    
-                </div>   
+            <div class="carousel-item bg-gray h-75 w-100 pb-4">
+                <img class="d-block w-100" src="../imagens/slide2.png" alt="Second slide">  
             </div>
-            <div class="carousel-item bg-gray h-700px w-100 pb-6">
-                <div class="row h-100"> 
-                    <div class="col-md-7 col-6">
-                        <h1 class="font-comemorativa text-white ms-3 h1-pg-3">A PROVA ESTÁ NA COLHER!</h1>
-                        <p class="text-white ms-3" style="font-size: 1.2em;">Sinta o sabor que te faz voltar sempre.</p>
-                        <img src="../imagens/ChatGPT Image 28 de nov. de 2025, 09_21_38.png" alt="Açai" class="galeria img1-pg-3">
-                    </div>
-                    <div class="col-md-5 col-6">
-                        <p class="text-white ms-2 pe-md-4 pe-2 p2-pg-3">Aquele momento perfeito de refrescância e energia que só um Açaí Mania proporciona. Experimente e apaixone-se! Não espere mais! Envie sua mensagem agora para o nosso WhatsApp e receba seu açaí fresquinho em minutos!</p>
-                        <a href="#" class="btn bg-yellow ms-2 btn1-pg-3">Pedir Agora</a>
-                    </div>
-                    
-                </div> 
+            <div class="carousel-item bg-gray h-75 w-100 pb-4">
+                <img class="d-block w-100" src="../imagens/slide3.png" alt="Third slide">
             </div>
         </div>
     </div>
 
-    <div class="container w-90 mx-auto position-relative z-index-1" style="margin-top: -100px;">
-        
+    <div class="container-fluid bg-gray mb-5">
+        <div class="row conheca mx-auto" style="max-width: 1440px;">
+            <div class="col-12 mb-5 mt-3"><h2 class="font-comemorativa text-center">Nós Conheça!</h2></div>
+            <div class="col-8 galeria cont-galeria" style="background-image: url(../imagens/image2.webp);"></div>
+            <div class="col-4 cont-galeria">
+                <div class="galeria" style="background-image: url(../imagens/image4.webp); height: 45%;"></div>
+                <div class="galeria margin-galeria" style="background-image: url(../imagens/image3.webp); height: 45%;"></div>
+            </div>
+        </div>
     </div>
-    <div class="container-fluid mx-auto mt-6">
+    <div class="container-fluid mx-auto mt-5">
         <div class="row mb-4">
                 <h1 class="text-center font-comemorativa">Cardapio</h1>
                 <p class="badge bg-dark mx-auto mt-5 badge-personalizado" id="populares">Populares</p>
@@ -157,7 +127,7 @@
                 <div class="carousel-item active">
                     <div class="row d-flex justify-content-center">
                         <div class="card card-acai">
-                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 09_38_47.png" class="card-img-top" alt="Banana Mania"></div>
+                            <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #651552;"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 09_38_47.png" class="card-img-top" alt="Banana Mania"></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Banana Mania</h5>
                                 <p class="card-text cont-card">Ingredientes: Banana-Leite em pó-Leite Condensado</p>
@@ -171,7 +141,7 @@
                             </ul>
                         </div>
                         <div class="card card-acai">
-                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 09_38_52.png" class="card-img-top" alt="Ninhotella Mania"></div>
+                            <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #651552;"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 09_38_52.png" class="card-img-top" alt="Ninhotella Mania"></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Ninhotella Mania</h5>
                                 <p class="card-text cont-card">Ingredientes: Nutella-Creme de ninho</p>
@@ -185,7 +155,7 @@
                             </ul>
                         </div>
                         <div class="card card-acai">
-                            <div class="bg-yellow mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 4 de dez. de 2025, 23_11_14.png" class="card-img-top" alt="Mania de Kit Kat"></div>
+                            <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #F2C438;"><img src="../imagens/ChatGPT Image 4 de dez. de 2025, 23_11_14.png" class="card-img-top" alt="Frape Tradicional"></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Frapê Tradicional</h5>
                                 <p class="card-text cont-card">Ingredientes: Açai-Banana-Leite-Paçoca-Leite em pó</p>
@@ -196,7 +166,7 @@
                             </ul>
                         </div>
                         <div class="card card-acai">
-                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 09_38_54.png" class="card-img-top" alt="Mania Tropical"></div>
+                            <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #F2C438;"><img src="../imagens/ChatGPT Image 8 de dez. de 2025, 09_21_57.png" class="card-img-top" alt="Frapê Turbinado"></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Frapê Turbinado</h5>
                                 <p class="card-text cont-card">Ingredientes: Açai-Banana-Leite-Nutella-Ovomaltine</p>
@@ -211,7 +181,7 @@
                 <div class="carousel-item">
                     <div class="row d-flex justify-content-center">
                         <div class="card card-acai">
-                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 5 de dez. de 2025, 09_25_42.png" class="card-img-top" alt="Morango Mania"></div>
+                            <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #7ca621;"><img src="../imagens/BarcaTradicional.png.png" class="card-img-top" alt=">Barca de Açai "></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Barca de Açai </h5>
                                 <p class="card-text cont-card">Ingredientes: Açai-Adicionais cobrados separadamente</p>
@@ -222,7 +192,7 @@
                             
                         </div>
                         <div class="card card-acai">
-                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_25_33.png" class="card-img-top" alt="Fit Mania"></div>
+                            <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #7ca621;"><img src="../imagens/BarcaTradicional.png.png" class="card-img-top" alt="Barca de Açai Trufado"></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Barca de Açai Trufado</h5>
                                 <p class="card-text cont-card">Ingredientes: Açai Trufado-Adicionais cobrados separadamente</p>
@@ -233,7 +203,7 @@
                             
                         </div>
                         <div class="card card-acai">
-                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Ratatowille Mania"></div>
+                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Copo de Açai Puro"></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Copo de Açai Puro</h5>
                                 <p class="card-text cont-card">Ingredientes: Açai-Adicionais cobrados separadamente</p>
@@ -247,7 +217,7 @@
                             </ul>
                         </div>
                         <div class="card card-acai">
-                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Ratatowille Mania"></div>
+                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Casadinho"></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Casadinho</h5>
                                 <p class="card-text cont-card">Ingredientes: Açai-Cupuaçu-Adicionais cobrados separadamente</p>
@@ -278,7 +248,7 @@
                 <div class="carousel-item active">
                     <div class="row d-flex justify-content-center">
                         <div class="card card-acai">
-                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 09_38_47.png" class="card-img-top" alt="Banana Mania"></div>
+                            <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #651552;"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 09_38_47.png" class="card-img-top" alt="Banana Mania"></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Banana Mania</h5>
                                 <p class="card-text cont-card">Ingredientes: Banana-Leite em pó-Leite Condensado</p>
@@ -292,7 +262,7 @@
                             </ul>
                         </div>
                         <div class="card card-acai">
-                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 09_38_52.png" class="card-img-top" alt="Ninhotella Mania"></div>
+                            <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #651552;"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 09_38_52.png" class="card-img-top" alt="Ninhotella Mania"></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Ninhotella Mania</h5>
                                 <p class="card-text cont-card">Ingredientes: Nutella-Creme de ninho</p>
@@ -310,7 +280,7 @@
                 <div class="carousel-item">
                     <div class="row d-flex justify-content-center">
                         <div class="card card-acai">
-                            <div class="bg-yellow mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 4 de dez. de 2025, 23_11_14.png" class="card-img-top" alt="Mania de Kit Kat"></div>
+                            <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #F2C438;"><img src="../imagens/ChatGPT Image 4 de dez. de 2025, 23_11_14.png" class="card-img-top" alt="Frape Tradicional"></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Frapê Tradicional</h5>
                                 <p class="card-text cont-card">Ingredientes: Açai-Banana-Leite-Paçoca-Leite em pó</p>
@@ -321,7 +291,7 @@
                             </ul>
                         </div>
                         <div class="card card-acai">
-                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 09_38_54.png" class="card-img-top" alt="Mania Tropical"></div>
+                            <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #F2C438;"><img src="../imagens/ChatGPT Image 8 de dez. de 2025, 09_21_57.png" class="card-img-top" alt="Frapê Turbinado"></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Frapê Turbinado</h5>
                                 <p class="card-text cont-card">Ingredientes: Açai-Banana-Leite-Nutella-Ovomaltine</p>
@@ -336,7 +306,7 @@
                 <div class="carousel-item">
                     <div class="row d-flex justify-content-center">
                         <div class="card card-acai">
-                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center" style="height: 24.5%;"><img src="../imagens/ChatGPT Image 5 de dez. de 2025, 09_25_42.png" class="card-img-top w-100" alt="Morango Mania"></div>
+                            <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #7ca621;"><img src="../imagens/BarcaTradicional.png.png" class="card-img-top" alt=">Barca de Açai "></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Barca de Açai </h5>
                                 <p class="card-text cont-card">Ingredientes: Açai-Adicionais cobrados separadamente</p>
@@ -347,7 +317,7 @@
                             
                         </div>
                         <div class="card card-acai">
-                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_25_33.png" class="card-img-top" alt="Fit Mania"></div>
+                            <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #7ca621;"><img src="../imagens/BarcaTradicional.png.png" class="card-img-top" alt="Barca de Açai Trufado"></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Barca de Açai Trufado</h5>
                                 <p class="card-text cont-card">Ingredientes: Açai Trufado-Adicionais cobrados separadamente</p>
@@ -355,13 +325,14 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item cont-card">1Kg-R$41,00</li>
                             </ul>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row d-flex justify-content-center">
                         <div class="card card-acai">
-                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Ratatowille Mania"></div>
+                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Copo de Açai Puro"></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Copo de Açai Puro</h5>
                                 <p class="card-text cont-card">Ingredientes: Açai-Adicionais cobrados separadamente</p>
@@ -375,7 +346,7 @@
                             </ul>
                         </div>
                         <div class="card card-acai">
-                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Ratatowille Mania"></div>
+                            <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Casadinho"></div>
                             <div class="card-body cont-card">
                                 <h5 class="card-title">Casadinho</h5>
                                 <p class="card-text cont-card">Ingredientes: Açai-Cupuaçu-Adicionais cobrados separadamente</p>
@@ -408,103 +379,103 @@
         </div>
         <div class="row d-flex justify-content-center mt-3">
             <div class="card card-acai">
-                <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Ratatowille Mania"></div>
+                <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 09_43_31.png" class="card-img-top" alt="Morango Mania"></div>
                 <div class="card-body cont-card">
-                    <h5 class="card-title">Casadinho</h5>
-                    <p class="card-text cont-card">Ingredientes: Açai-Cupuaçu-Adicionais cobrados separadamente</p>
+                    <h5 class="card-title">Morango Mania</h5>
+                    <p class="card-text cont-card">Ingredientes: Morango-Creme Ninho</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item cont-card">200ml-R$13,00</li>
-                    <li class="list-group-item cont-card">300ml-R$15,00</li>
-                    <li class="list-group-item cont-card">400ml-R$17,00</li>
-                    <li class="list-group-item cont-card">500ml-R$19,00</li>
-                    <li class="list-group-item cont-card">700ml-R$24,00</li>
+                    <li class="list-group-item cont-card">200ml-R$29,00</li>
+                    <li class="list-group-item cont-card">300ml-R$31,00</li>
+                    <li class="list-group-item cont-card">400ml-R$33,50</li>
+                    <li class="list-group-item cont-card">500ml-R$36,00</li>
+                    <li class="list-group-item cont-card">700ml-R$40,50</li>
                 </ul>
             </div>
             <div class="card card-acai">
                 <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Ratatowille Mania"></div>
                 <div class="card-body cont-card">
-                    <h5 class="card-title">Casadinho</h5>
-                    <p class="card-text cont-card">Ingredientes: Açai-Cupuaçu-Adicionais cobrados separadamente</p>
+                    <h5 class="card-title">Ratatowille Mania</h5>
+                    <p class="card-text cont-card">Ingredientes: Banana-Morango-Leite em pó</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item cont-card">200ml-R$13,00</li>
-                    <li class="list-group-item cont-card">300ml-R$15,00</li>
-                    <li class="list-group-item cont-card">400ml-R$17,00</li>
-                    <li class="list-group-item cont-card">500ml-R$19,00</li>
-                    <li class="list-group-item cont-card">700ml-R$24,00</li>
+                    <li class="list-group-item cont-card">200ml-R$28,50</li>
+                    <li class="list-group-item cont-card">300ml-R$30,50</li>
+                    <li class="list-group-item cont-card">400ml-R$33,00</li>
+                    <li class="list-group-item cont-card">500ml-R$35,50</li>
+                    <li class="list-group-item cont-card">700ml-R$40,00</li>
                 </ul>
             </div>
             <div class="card card-acai">
-                <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Ratatowille Mania"></div>
+                <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 09_38_54.png" class="card-img-top" alt="Mania de Kit Kat"></div>
                 <div class="card-body cont-card">
-                    <h5 class="card-title">Casadinho</h5>
-                    <p class="card-text cont-card">Ingredientes: Açai-Cupuaçu-Adicionais cobrados separadamente</p>
+                    <h5 class="card-title">Mania de Kit Kat</h5>
+                    <p class="card-text cont-card">Ingredientes: Creme de Kit Kat-Leite em pó</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item cont-card">200ml-R$13,00</li>
-                    <li class="list-group-item cont-card">300ml-R$15,00</li>
-                    <li class="list-group-item cont-card">400ml-R$17,00</li>
-                    <li class="list-group-item cont-card">500ml-R$19,00</li>
-                    <li class="list-group-item cont-card">700ml-R$24,00</li>
+                    <li class="list-group-item cont-card">200ml-R$23,50</li>
+                    <li class="list-group-item cont-card">300ml-R$25,50</li>
+                    <li class="list-group-item cont-card">400ml-R$28,00</li>
+                    <li class="list-group-item cont-card">500ml-R$30,50</li>
+                    <li class="list-group-item cont-card">700ml-R$35,00</li>
                 </ul>
             </div>
             <div class="card card-acai">
-                <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Ratatowille Mania"></div>
+                <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 09_38_47.png" class="card-img-top" alt="Banana Mania"></div>
                 <div class="card-body cont-card">
-                    <h5 class="card-title">Casadinho</h5>
-                    <p class="card-text cont-card">Ingredientes: Açai-Cupuaçu-Adicionais cobrados separadamente</p>
+                    <h5 class="card-title">Banana Mania</h5>
+                    <p class="card-text cont-card">Ingredientes: Banana-Leite em pó-Leite Condensado</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item cont-card">200ml-R$13,00</li>
-                    <li class="list-group-item cont-card">300ml-R$15,00</li>
-                    <li class="list-group-item cont-card">400ml-R$17,00</li>
-                    <li class="list-group-item cont-card">500ml-R$19,00</li>
-                    <li class="list-group-item cont-card">700ml-R$24,00</li>
+                    <li class="list-group-item cont-card">200ml-R$23,00</li>
+                    <li class="list-group-item cont-card">300ml-R$25,00</li>
+                    <li class="list-group-item cont-card">400ml-R$27,50</li>
+                    <li class="list-group-item cont-card">500ml-R$30,00</li>
+                    <li class="list-group-item cont-card">700ml-R$34,50</li>
                 </ul>
             </div>
         </div>
         <div class="row d-flex justify-content-center mt-4">
             <div class="card card-acai">
-                <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Ratatowille Mania"></div>
+                <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 09_38_52.png" class="card-img-top" alt="Ninhotella Mania"></div>
                 <div class="card-body cont-card">
-                    <h5 class="card-title">Casadinho</h5>
-                    <p class="card-text cont-card">Ingredientes: Açai-Cupuaçu-Adicionais cobrados separadamente</p>
+                    <h5 class="card-title">Ninhotella Mania</h5>
+                    <p class="card-text cont-card">Ingredientes: Nutella-Creme de ninho</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item cont-card">200ml-R$13,00</li>
-                    <li class="list-group-item cont-card">300ml-R$15,00</li>
-                    <li class="list-group-item cont-card">400ml-R$17,00</li>
-                    <li class="list-group-item cont-card">500ml-R$19,00</li>
-                    <li class="list-group-item cont-card">700ml-R$24,00</li>
+                    <li class="list-group-item cont-card">200ml-R$29,00</li>
+                    <li class="list-group-item cont-card">300ml-R$31,00</li>
+                    <li class="list-group-item cont-card">400ml-R$33,50</li>
+                    <li class="list-group-item cont-card">500ml-R$36,00</li>
+                    <li class="list-group-item cont-card">700ml-R$40,50</li>
                 </ul>
             </div>
             <div class="card card-acai">
-                <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Ratatowille Mania"></div>
+                <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_25_33.png" class="card-img-top" alt="Mania Tropical"></div>
                 <div class="card-body cont-card">
-                    <h5 class="card-title">Casadinho</h5>
-                    <p class="card-text cont-card">Ingredientes: Açai-Cupuaçu-Adicionais cobrados separadamente</p>
+                    <h5 class="card-title">Mania Tropical</h5>
+                    <p class="card-text cont-card">Ingredientes: Banana-Morango-Kiwi-Maça</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item cont-card">200ml-R$13,00</li>
-                    <li class="list-group-item cont-card">300ml-R$15,00</li>
-                    <li class="list-group-item cont-card">400ml-R$17,00</li>
-                    <li class="list-group-item cont-card">500ml-R$19,00</li>
-                    <li class="list-group-item cont-card">700ml-R$24,00</li>
+                    <li class="list-group-item cont-card">200ml-R$36,00</li>
+                    <li class="list-group-item cont-card">300ml-R$38,00</li>
+                    <li class="list-group-item cont-card">400ml-R$40,50</li>
+                    <li class="list-group-item cont-card">500ml-R$43,00</li>
+                    <li class="list-group-item cont-card">700ml-R$47,50</li>
                 </ul>
             </div>
             <div class="card card-acai">
-                <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Ratatowille Mania"></div>
+                <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 8 de dez. de 2025, 09_47_33.png.png" class="card-img-top" alt="Fit Mania"></div>
                 <div class="card-body cont-card">
-                    <h5 class="card-title">Casadinho</h5>
-                    <p class="card-text cont-card">Ingredientes: Açai-Cupuaçu-Adicionais cobrados separadamente</p>
+                    <h5 class="card-title">Fit Mania</h5>
+                    <p class="card-text cont-card">Ingredientes: Granola-Mel-Banana</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item cont-card">200ml-R$13,00</li>
-                    <li class="list-group-item cont-card">300ml-R$15,00</li>
-                    <li class="list-group-item cont-card">400ml-R$17,00</li>
-                    <li class="list-group-item cont-card">500ml-R$19,00</li>
-                    <li class="list-group-item cont-card">700ml-R$24,00</li>
+                    <li class="list-group-item cont-card">200ml-R$28,00</li>
+                    <li class="list-group-item cont-card">300ml-R$30,00</li>
+                    <li class="list-group-item cont-card">400ml-R$32,50</li>
+                    <li class="list-group-item cont-card">500ml-R$35,00</li>
+                    <li class="list-group-item cont-card">700ml-R$39,50</li>
                 </ul>
             </div>
             <div class="card-acai"></div>
@@ -515,17 +486,47 @@
             </div>
             <div class="row d-flex justify-content-center mt-3 mb-5">
                 <div class="card card-acai">
-                    <div class="bg-purple mt-2 d-flex justify-content-center align-items-center"><img src="../imagens/ChatGPT Image 2 de dez. de 2025, 10_30_43.png" class="card-img-top" alt="Ratatowille Mania"></div>
+                    <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #F2C438;"><img src="../imagens/ChatGPT Image 4 de dez. de 2025, 23_11_14.png" class="card-img-top" alt="Frape Tradicional"></div>
                     <div class="card-body cont-card">
-                        <h5 class="card-title">Casadinho</h5>
-                        <p class="card-text cont-card">Ingredientes: Açai-Cupuaçu-Adicionais cobrados separadamente</p>
+                        <h5 class="card-title">Frapê Tradicional</h5>
+                        <p class="card-text cont-card">Ingredientes: Açai-Banana-Leite-Paçoca-Leite em pó</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item cont-card">200ml-R$13,00</li>
-                        <li class="list-group-item cont-card">300ml-R$15,00</li>
-                        <li class="list-group-item cont-card">400ml-R$17,00</li>
+                        <li class="list-group-item cont-card">500ml-R$23,00</li>
+                        <li class="list-group-item cont-card">700ml-R$28,00</li>
+                    </ul>
+                </div>
+                <div class="card card-acai">
+                    <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #F2C438;"><img src="../imagens/ChatGPT Image 8 de dez. de 2025, 09_21_57.png" class="card-img-top" alt="Frapê Turbinado"></div>
+                    <div class="card-body cont-card">
+                        <h5 class="card-title">Frapê Turbinado</h5>
+                        <p class="card-text cont-card">Ingredientes: Açai-Banana-Leite-Nutella-Ovomaltine</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item cont-card">500ml-R$31,00</li>
+                        <li class="list-group-item cont-card">700ml-R$35,00</li>
+                    </ul>
+                </div>
+                <div class="card card-acai">
+                    <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #F2C438;"><img src="../imagens/ChatGPT Image 4 de dez. de 2025, 23_11_14.png" class="card-img-top" alt="Frape Tradicional"></div>
+                    <div class="card-body cont-card">
+                        <h5 class="card-title">Frapê Tropical</h5>
+                        <p class="card-text cont-card">Ingredientes: Açai-Suco de Laranja</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
                         <li class="list-group-item cont-card">500ml-R$19,00</li>
                         <li class="list-group-item cont-card">700ml-R$24,00</li>
+                    </ul>
+                </div>
+                <div class="card card-acai">
+                    <div class="mt-2 d-flex justify-content-center align-items-center" style="background-color: #F2C438;"><img src="../imagens/ChatGPT Image 4 de dez. de 2025, 23_11_14.png" class="card-img-top" alt="Frape Tradicional"></div>
+                    <div class="card-body cont-card">
+                        <h5 class="card-title">Frapê de Morango Cremoso</h5>
+                        <p class="card-text cont-card">Ingredientes: Cupuaçu-Morango-Leite em pó-Leite Condensado-Calda de Morango</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item cont-card">500ml-R$27,00</li>
+                        <li class="list-group-item cont-card">700ml-R$34,00</li>
                     </ul>
                 </div>
             </div>

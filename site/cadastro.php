@@ -1,9 +1,33 @@
+<?php 
+
+    session_start();
+    
+    if(isset($_POST['submit'])) 
+    {
+        include_once('../site/config.php');
+
+        $nome = $_POST['nomeCadastro'];
+        $telefone = $_POST['telefoneCadastro'];
+        $email = $_POST['emailCadastro'];
+        $senha = $_POST['senhaCadastro'];
+        $cidade = $_POST['cidadeCadastro'];
+        $rua = $_POST['ruaCadastro'];
+        $numero = $_POST['numeroCadastro'];
+
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, telefone, email, senha, cidade, rua, numero) VALUES ('$nome', '$telefone', '$email', '$senha', '$cidade', '$rua', '$numero')");
+
+        $_SESSION['alert'] = "Cadastro feito com sucesso!";
+        header('Location: login.php');
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Açai Mania | Login</title>
+    <title>Açai Mania | Cadastre-se</title>
     <link rel="shortcut icon" href="../imagens/ChatGPT Image 26 de nov. de 2025, 09_07_41.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -33,7 +57,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link" href="login.php">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-disabled="true"><img src="../imagens/logo_whatsapp.webp" alt="logo" style="margin: -5px -2px 0 0">WhatsApp</a>
@@ -57,7 +81,7 @@
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -78,7 +102,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-dark" aria-current="page" href="login.html">Login</a>
+                            <a class="nav-link active text-dark" aria-current="page" href="login.php">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" aria-disabled="true">WhatsApp<img src="../imagens/logo_whatsapp.webp" alt="logo" style="margin: -5px -2px 0 0"></a>
@@ -94,20 +118,47 @@
     </nav>
 
     <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
-        <form class="bg-gray p-4 rounded">
+        <form class="cadastro bg-gray p-4 rounded" action="cadastro.php" method="POST">
+            <h2 class="text-center font-comemorativa mb-4">Cadastre-se</h2>
             <div class="form-group">
-                <label for="inputEmail">Email:</label>
-                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email">
-                <small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu e-mail com ninguém.</small>
+                <label for="inputEmail4">Nome:</label>
+                <input type="name" class="form-control" id="inputName" name="nomeCadastro" placeholder="Nome">
             </div>
             <div class="form-group">
-                <label for="inputPassword">Senha:</label>
-                <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
+                <label for="inputEmail4">Telefone:</label>
+                <input type="tel" class="form-control" id="inputTel" name="telefoneCadastro" aplaceholder="Telefone">
             </div>
-            <div class="form-group mt-4">
-                <a href="cadastro.html">Cadastre-se</a>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="inputEmail4">Email:</label>
+                    <input type="email" class="form-control" id="inputEmail" name="emailCadastro" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword4">Senha</label>
+                    <input type="password" class="form-control" id="inputPassword" name="senhaCadastro" placeholder="Password">
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary mt-2">Entrar</button>
+            <div class="form-group">
+                <label for="inputCity">Cidade:</label>
+                <select id="inputCity" name="cidadeCadastro" class="form-control">
+                    <option selected>Escolha...</option>
+                    <option>Fronteira-MG</option>
+                </select>
+            </div>
+            <div class="form-row d-flex">
+                <div class="form-group col-7">
+                    <label for="inputRua">Rua:</label>
+                    <select id="inputRua" name="ruaCadastro" class="form-control">
+                        <option selected>Escolha...</option>
+                        <option>Fronteira</option>
+                    </select>
+                </div>
+                <div class="form-group col-4 ms-auto">
+                    <label for="inputNumber">N°</label>
+                    <input type="number" class="form-control" id="inputNumber" name="numeroCadastro" placeholder="Número">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-5" name="submit">Sign in</button>
         </form>
     </div>
 

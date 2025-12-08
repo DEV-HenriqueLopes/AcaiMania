@@ -1,9 +1,25 @@
+<?php
+    session_start();
+
+
+    if (isset($_SESSION['alert'])) {
+        $mensagem_erro = $_SESSION['alert'];
+        
+        unset($_SESSION['alert']); 
+    
+        echo "<script>";
+        echo "alert(" . json_encode($mensagem_erro) . ");";
+        echo "</script>";
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Açai Mania | Cadastre-se</title>
+    <title>Açai Mania | Login</title>
     <link rel="shortcut icon" href="../imagens/ChatGPT Image 26 de nov. de 2025, 09_07_41.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -33,7 +49,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link" href="login.php">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-disabled="true"><img src="../imagens/logo_whatsapp.webp" alt="logo" style="margin: -5px -2px 0 0">WhatsApp</a>
@@ -57,7 +73,7 @@
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -78,7 +94,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-dark" aria-current="page" href="#">Login</a>
+                            <a class="nav-link active text-dark" aria-current="page" href="login.php">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" aria-disabled="true">WhatsApp<img src="../imagens/logo_whatsapp.webp" alt="logo" style="margin: -5px -2px 0 0"></a>
@@ -94,47 +110,20 @@
     </nav>
 
     <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
-        <form class="cadastro bg-gray p-4 rounded">
-            <h2 class="text-center font-comemorativa mb-4">Cadastre-se</h2>
+        <form class="bg-gray p-4 rounded" action="testLogin.php" method="POST">
             <div class="form-group">
-                <label for="inputEmail4">Nome:</label>
-                <input type="name" class="form-control" id="inputName" placeholder="Nome">
-            </div>
-            <div class="form-group">
-                <label for="inputEmail4">Telefone:</label>
-                <input type="tel" class="form-control" id="inputTel" placeholder="Telefone">
-            </div>
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="inputEmail4">Email:</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <label for="inputPassword4">Senha</label>
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                </div>
+                <label for="inputEmail">Email:</label>
+                <input type="email" class="form-control" id="inputEmail" name="emailLogin" aria-describedby="emailHelp" placeholder="Email">
+                <small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu e-mail com ninguém.</small>
             </div>
             <div class="form-group">
-                <label for="inputCity">Cidade:</label>
-                <select id="inputCity" class="form-control">
-                    <option selected>Escolha...</option>
-                    <option>Fronteira-MG</option>
-                </select>
+                <label for="inputPassword">Senha:</label>
+                <input type="password" class="form-control" id="inputPassword" name="senhaLogin" placeholder="Senha">
             </div>
-            <div class="form-row d-flex">
-                <div class="form-group col-7">
-                    <label for="inputRua">Rua:</label>
-                    <select id="inputRua" class="form-control">
-                        <option selected>Escolha...</option>
-                        <option>Fronteira</option>
-                    </select>
-                </div>
-                <div class="form-group col-4 ms-auto">
-                    <label for="inputNumber">N°</label>
-                    <input type="number" class="form-control" id="inputNumber" placeholder="Número">
-                </div>
+            <div class="form-group mt-4">
+                <a href="cadastro.php">Cadastre-se</a>
             </div>
-            <button type="submit" class="btn btn-primary mt-5">Sign in</button>
+            <input type="submit" name="submit" value="Entrar" class="btn bg-yellow mt-2 prev"></input>
         </form>
     </div>
 
